@@ -1,5 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Pressure Lab: who delivers when the match is on the line. SupeRR Selector Season 2 pressure ratings for IPL and T20I players.">
+<style>html{color-scheme:light}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Pressure Lab</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
 <style>
 /* Layout: a fixed top band with the thesis and five stat tiles, a sticky tab rail, one panel per question, and a slide-in player drawer. */
@@ -113,6 +119,8 @@ svg text{fill:var(--fg)}
 .foot{color:var(--muted);font-size:12px;max-width:80ch}
 @media (max-width:700px){.bar{grid-template-columns:96px 1fr 44px}.strip,.strip-l{grid-template-columns:repeat(6,1fr)}}
 </style>
+</head>
+<body>
 
 <div class="top"><div class="wrap">
   <div class="brand">
@@ -394,3 +402,6 @@ $('#p-method').innerHTML=`
 </div>
 <dl class="dl"><dt>Eligibility</dt><dd>100 pressure balls and 8 innings (batters) or matches (bowlers); 112 batters and 108 bowlers qualify.</dd><dt>Competitions</dt><dd>IPL 2022–26 and T20Is between full members; associate and A-team matches train the win-probability model but do not rate players.</dd><dt>Exclusions</dt><dd>Rain-affected (DLS or revised) matches, no-results, super overs. Tied matches count 0.5.</dd><dt>Known limits</dt><dd>First-innings leverage is noisier (AUC 0.68); no World Cup matches in the pack; venue and matchup type are controls in a variant, not the main model; a few listed players have 140–150 pressure balls.</dd></dl>`;
 </script>
+
+</body>
+</html>
